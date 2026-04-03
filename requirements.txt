@@ -8,3 +8,5 @@ scipy
 jupyterlab
 openpyxl
 geopandas
+wquantiles
+statsmodels
