@@ -1,0 +1,200 @@
+{
+  "n_train": 5360,
+  "n_test": 1340,
+  "n_features": 14,
+  "removed_by_vif": [
+    "days_since_last_review"
+  ],
+  "removed_by_cook": 279,
+  "best_predictive_model": "M8 — Random Forest log(y)",
+  "best_interpretable_model": "M2 — Linear múltipla log(y)",
+  "geo_comparison": [
+    {
+      "Representação geográfica": "Clusters K-Means",
+      "N preditores": 14,
+      "CV_RMSE": 49.664808686700084,
+      "Test_RMSE": 50.427008811611195,
+      "Test_MAE": 29.86058702732579,
+      "Test_WAPE_%": 27.001273106563573,
+      "Test_R2": 0.4077464363721872
+    },
+    {
+      "Representação geográfica": "Bairros agregados",
+      "N preditores": 51,
+      "CV_RMSE": 48.564941314935155,
+      "Test_RMSE": 49.56352192440057,
+      "Test_MAE": 29.043369532248242,
+      "Test_WAPE_%": 26.26230863972781,
+      "Test_R2": 0.4278556870220819
+    }
+  ],
+  "max_error_summary": [
+    {
+      "Indicador": "Erro absoluto máximo",
+      "Valor": 444.8419431360036
+    },
+    {
+      "Indicador": "Preço real mediano top 20 erros",
+      "Valor": 393.0
+    },
+    {
+      "Indicador": "Preço previsto mediano top 20 erros",
+      "Valor": 130.5929756464833
+    },
+    {
+      "Indicador": "N top 20 Entire home/apt",
+      "Valor": 20
+    },
+    {
+      "Indicador": "N top 20 Private room",
+      "Valor": 0
+    },
+    {
+      "Indicador": "N top 20 sem reviews",
+      "Valor": 1
+    },
+    {
+      "Indicador": "N top 20 preço real acima P95",
+      "Valor": 20
+    },
+    {
+      "Indicador": "Bairro/grupo mais frequente no top 20",
+      "Valor": "POBLATS MARITIMS"
+    }
+  ],
+  "shap_status": "SHAP disponível e gráfico gerado para Random Forest.",
+  "best_predictive_metrics": {
+    "Modelo": "M8 — Random Forest log(y)",
+    "Train_RMSE": 22.160272612316724,
+    "CV_RMSE": 49.055422761031465,
+    "CV_RMSE_std": 2.343470510468469,
+    "Test_RMSE": 49.99521467791072,
+    "Train_MAE": 11.873360084167375,
+    "CV_MAE": 30.097899312437175,
+    "Test_MAE": 29.41948125383882,
+    "Test_MedAE": 17.91930183600316,
+    "Test_MAPE_%": 27.108442128142247,
+    "Test_WAPE_%": 26.602405614511117,
+    "Train_R2": 0.8801159857447107,
+    "CV_R2": 0.41165510890255186,
+    "Test_R2": 0.41784565648571037,
+    "Test_MaxAE": 447.7241468744201,
+    "Gap_Test_Train_RMSE": 27.834942065593992,
+    "Gap_Test_CV_RMSE": 0.9397919168792512,
+    "Best params": "{\"regressor__model__n_estimators\": 200, \"regressor__model__min_samples_leaf\": 1, \"regressor__model__max_features\": 1.0, \"regressor__model__max_depth\": null}",
+    "Tempo_s": 46.38195180892944
+  },
+  "best_interpretable_metrics": {
+    "Modelo": "M2 — Linear múltipla log(y)",
+    "Train_RMSE": 54.002672014687306,
+    "CV_RMSE": 54.06649810213861,
+    "CV_RMSE_std": 2.3047567215107563,
+    "Test_RMSE": 55.99447526213739,
+    "Train_MAE": 34.23611003166919,
+    "CV_MAE": 34.34526935411765,
+    "Test_MAE": 34.1553381258839,
+    "Test_MedAE": 22.50456308116448,
+    "Test_MAPE_%": 31.405714584115245,
+    "Test_WAPE_%": 30.884778384968236,
+    "Train_R2": 0.2880629788338266,
+    "CV_R2": 0.28570032270927026,
+    "Test_R2": 0.2697498998060103,
+    "Test_MaxAE": 437.39571000633066,
+    "Gap_Test_Train_RMSE": 1.9918032474500862,
+    "Gap_Test_CV_RMSE": 1.9279771599987825,
+    "Best params": "{}",
+    "Tempo_s": 0.12371253967285156
+  },
+  "lasso_kept": [
+    "room_type_Private room",
+    "log_minimum_nights",
+    "reviews_per_month",
+    "profissional",
+    "number_of_reviews_ltm",
+    "availability_rate",
+    "location_cluster_2",
+    "number_of_reviews",
+    "calculated_host_listings_count",
+    "license_exists",
+    "location_cluster_1",
+    "room_type_Shared room",
+    "room_type_Hotel room",
+    "has_reviews"
+  ],
+  "lasso_removed": [],
+  "lasso_1se_alpha": 0.05,
+  "lasso_1se_metrics": {
+    "MAE": 34.849427488941686,
+    "RMSE": 57.44657347967356,
+    "MedAE": 22.891539586169564,
+    "MAPE_%": 32.60539446733583,
+    "WAPE_%": 31.512404909360857,
+    "R2": 0.23138381414311548,
+    "MaxAE": 452.12018975939486
+  },
+  "lasso_1se_kept": [
+    "room_type_Private room",
+    "log_minimum_nights",
+    "reviews_per_month"
+  ],
+  "lasso_1se_removed": [
+    "number_of_reviews_ltm",
+    "calculated_host_listings_count",
+    "number_of_reviews",
+    "availability_rate",
+    "license_exists",
+    "has_reviews",
+    "profissional",
+    "room_type_Shared room",
+    "room_type_Hotel room",
+    "location_cluster_1",
+    "location_cluster_2"
+  ],
+  "artificial_listing_profile": {
+    "room_type": "Entire home/apt",
+    "minimum_nights": 2,
+    "number_of_reviews": 45,
+    "reviews_per_month": 1.8,
+    "calculated_host_listings_count": 3,
+    "availability_365": 180,
+    "number_of_reviews_ltm": 12,
+    "license_exists": 1,
+    "latitude": 39.47,
+    "longitude": -0.37,
+    "neighbourhood_group": "CIUTAT VELLA",
+    "location_cluster_interpretado": "Cluster centro histórico-turístico"
+  },
+  "artificial_listing_predictions": [
+    {
+      "Modelo": "M6 — Lasso log(y)",
+      "Tipo": "Clássico / interpretável",
+      "Preço previsto (€)": 130.47128901063473,
+      "Interpretação": "Modelo linear regularizado com alvo logarítmico; permite leitura por coeficientes e selecção de variáveis."
+    },
+    {
+      "Modelo": "M9 — HistGradientBoosting log(y)",
+      "Tipo": "Não clássico / não linear",
+      "Preço previsto (€)": 128.09499239087933,
+      "Interpretação": "Modelo flexível que capta relações não lineares e interacções sem as especificar manualmente."
+    }
+  ],
+  "artificial_listing_metrics": [
+    {
+      "Modelo": "M9 — HistGradientBoosting log(y)",
+      "RMSE teste": 50.427008811611195,
+      "MAE teste": 29.86058702732579,
+      "WAPE teste (%)": 27.001273106563573,
+      "R² teste": 0.4077464363721872,
+      "Preço previsto (€)": 128.09499239087933
+    },
+    {
+      "Modelo": "M6 — Lasso log(y)",
+      "RMSE teste": 55.99543807939057,
+      "MAE teste": 34.15549565105849,
+      "WAPE teste (%)": 30.88492082624899,
+      "R² teste": 0.2697247864912722,
+      "Preço previsto (€)": 130.47128901063473
+    }
+  ],
+  "artificial_listing_reading": "As previsões são próximas, sugerindo estabilidade para este perfil de alojamento."
+}

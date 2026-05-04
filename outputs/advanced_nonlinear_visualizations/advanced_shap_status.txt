@@ -1,0 +1,3 @@
+              Modelo      Estado                                                               Top_features
+       Random Forest SHAP gerado              room_type_Private room, log_minimum_nights, reviews_per_month
+HistGradientBoosting SHAP gerado room_type_Private room, log_minimum_nights, calculated_host_listings_count

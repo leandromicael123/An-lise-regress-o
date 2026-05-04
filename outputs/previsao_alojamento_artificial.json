@@ -1,0 +1,50 @@
+{
+  "perfil": {
+    "room_type": "Entire home/apt",
+    "minimum_nights": 2,
+    "number_of_reviews": 45,
+    "reviews_per_month": 1.8,
+    "calculated_host_listings_count": 3,
+    "availability_365": 180,
+    "number_of_reviews_ltm": 12,
+    "license_exists": 1,
+    "latitude": 39.47,
+    "longitude": -0.37,
+    "neighbourhood_group": "CIUTAT VELLA",
+    "location_cluster_interpretado": "Cluster centro histórico-turístico"
+  },
+  "previsoes": [
+    {
+      "Modelo": "M6 — Lasso log(y)",
+      "Tipo": "Clássico / interpretável",
+      "Preço previsto (€)": 130.47128901063473,
+      "Interpretação": "Modelo linear regularizado com alvo logarítmico; permite leitura por coeficientes e selecção de variáveis."
+    },
+    {
+      "Modelo": "M9 — HistGradientBoosting log(y)",
+      "Tipo": "Não clássico / não linear",
+      "Preço previsto (€)": 128.09499239087933,
+      "Interpretação": "Modelo flexível que capta relações não lineares e interacções sem as especificar manualmente."
+    }
+  ],
+  "metricas_globais": [
+    {
+      "Modelo": "M9 — HistGradientBoosting log(y)",
+      "RMSE teste": 50.427008811611195,
+      "MAE teste": 29.86058702732579,
+      "WAPE teste (%)": 27.001273106563573,
+      "R² teste": 0.4077464363721872,
+      "Preço previsto (€)": 128.09499239087933
+    },
+    {
+      "Modelo": "M6 — Lasso log(y)",
+      "RMSE teste": 55.99543807939057,
+      "MAE teste": 34.15549565105849,
+      "WAPE teste (%)": 30.88492082624899,
+      "R² teste": 0.2697247864912722,
+      "Preço previsto (€)": 130.47128901063473
+    }
+  ],
+  "diferenca_previsao": 2.376296619755408,
+  "leitura": "As previsões são próximas, sugerindo estabilidade para este perfil de alojamento."
+}
